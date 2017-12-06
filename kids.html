@@ -1,0 +1,636 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SportKraft | Tu tienda deportiva desde casa, con un sólo click</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+    
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+        <style>
+            html, body{
+                font-family: Verdana,sans-serif;
+            }
+        </style>
+        <header>
+            <div class="main_title">
+                <h3>SportKraft-Kids</h3>
+            </div>
+            <section class="main_header">
+                <div id="social_links">
+                    <div class="social_icons">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="social_links__buttons">
+                        <a href="">Inicio</a>
+                        <a href="">Registro</a>
+                    </div>
+                </div>
+                <div id="main_description">
+                    <div>
+                        <img src="img/animal.png" alt="">
+                        <h1>SportKraft-Kids</h1> 
+                    </div>
+                    <h2>Tu tienda deportiva desde casa, con un sólo click.</h2>
+                </div>
+            </section>
+            <div id="main__nav_section">
+                    <div id="principal__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html" id="home_btn" style="padding: 15px 10px;">Inicio</a></li>
+                                <li><a href="mens.html" style="padding: 15px 10px;">Hombres</a>
+                                    <ul>
+                                        <li><a href="mens.html">Chaquetas</a></li>
+                                        <li><a href="mens.html">Camisas</a></li>
+                                        <li><a href="mens.html">Pantalones</a></li>
+                                        <li><a href="mens.html">Calzado</a></li>
+                                        <li><a href="mens.html">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="women.html" style="padding: 15px 10px;">Mujeres</a>
+                                <ul>
+                                    <li><a href="women.html">Chaquetas</a></li>
+                                    <li><a href="women.html">Camisas</a></li>
+                                    <li><a href="women.html">Pantalones</a></li>
+                                    <li><a href="women.html">Calzado</a></li>
+                                    <li><a href="women.html">Accesorios</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="kids.html" style="padding: 15px 10px;">Niños</a>
+                                    <ul>
+                                        <li><a href="kids.html">Chaquetas</a></li>
+                                        <li><a href="kids.html">Camisas</a></li>
+                                        <li><a href="kids.html">Pantalones</a></li>
+                                        <li><a href="kids.html">Calzado</a></li>
+                                        <li><a href="kids.html">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="brands.html" style="padding: 15px 10px;">Marcas</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="search_icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" name="search" placeholder="Buscar" style="border: none;
+                            font-size: 0.7rem;">
+                    </div>
+                </div>
+        </header>    <style>
+    #slide__container {
+        width: 100%;
+    }
+    
+    .price_slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .price_slider:hover {
+        opacity: 1;
+    }
+    
+    .price_slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 23px;
+        height: 24px;
+        border: 0;
+        background: url('img/contrasticon.png');
+        cursor: pointer;
+    }
+    
+    .price_slider::-moz-range-thumb {
+        width: 23px;
+        height: 24px;
+        border: 0;
+        background: url('img/contrasticon.png');
+        cursor: pointer;
+    }
+    
+    #clothescontainer{
+       
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #filters{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        
+    }
+    
+    #clothes {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin-left: 100px;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
+    #clothes > .top-clothes__section{
+        margin-left: 40px;
+        color: #2e342f;
+    }
+    
+    #clothes > .bottom-clothes__section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    #clothes__element{
+       margin: 20px;
+       text-align: center;
+       width: 25%;
+       background: #4c4f51;
+    }
+    
+    #clothes img{
+        width: 100%;
+        height: 240px;
+    }
+    
+    #clothes p{
+        width: 100%;
+        color: white;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+    
+    #clothes h3{
+        width: 100%;
+        color: white;
+    }
+    </style>
+    
+    <section id="clothescontainer">
+        <div id="filters">
+            <div id="slide__container">
+                <input type="range" min="20000" max="500000" value="500000" class="price_slider" id="myRange">
+                <p>Precio: $<span id="demo"></span></p>
+            </div>
+            <div>
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 1</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 2</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 3</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 4</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 5</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 6</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 7</label>
+                        </p>            
+                                    <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Checkbox 8</label>
+                        </p>            
+                        </div>
+        </div>
+        <div id="clothes">
+            <div class="top-clothes__section"><h2>Niños</h2></div>
+            <div class="bottom-clothes__section">
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 32896</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 64736</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 190268</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 402942</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 332202</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 83074</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 179260</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 35388</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 486052</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 317312</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 485787</h3>
+                        </div>         
+                                    <div id="clothes__element">
+                            <img src="img/clothes/kids.jpg" alt="">
+                            <p>Camiseta estampada</p>
+                            <!--<h3>$189.900</h3>-->
+                            <h3>$ 347798</h3>
+                        </div>         
+                        </div>
+        </div>
+    </section>
+    
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+    
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+    </script> 
+        <hr style="margin-top:50px;">
+    
+            
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    
+    <style>
+    .slick-slide {
+        margin: 0 30px;
+        margin-bottom: 1000px;
+    }
+    
+    .slick-slide img {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .slick-slider
+    {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+                user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+            touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .slick-list
+    {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .slick-list:focus
+    {
+        outline: none;
+    }
+    .slick-list.dragging
+    {
+        cursor: pointer;
+        cursor: hand;
+    }
+    
+    .slick-slider .slick-track,
+    .slick-slider .slick-list
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+           -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+             -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+    
+    .slick-track
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .slick-track:before,
+    .slick-track:after
+    {
+        display: table;
+        content: '';
+    }
+    .slick-track:after
+    {
+        clear: both;
+    }
+    .slick-loading .slick-track
+    {
+        visibility: hidden;
+    }
+    
+    .slick-slide
+    {
+        display: none;
+        float: left;
+        height: 120px;
+        min-height: 1px;
+    }
+    [dir='rtl'] .slick-slide
+    {
+        float: right;
+    }
+    .slick-slide img
+    {
+        display: block;
+    }
+    .slick-slide.slick-loading img
+    {
+        display: none;
+    }
+    .slick-slide.dragging img
+    {
+        pointer-events: none;
+    }
+    .slick-initialized .slick-slide
+    {
+        display: block;
+    }
+    .slick-loading .slick-slide
+    {
+        visibility: hidden;
+    }
+    .slick-vertical .slick-slide
+    {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+    .container-logo{
+        margin: 10px 50px;
+        height: 270px;
+        
+    
+    }
+    .container-logo h2{
+        margin-bottom: 80px;
+        font-size: 2.3rem;
+        text-align: center;
+        color: #f84e56;
+    }
+    
+    .customer-logos slider{
+        
+    }
+    </style>
+    
+    <div class="container-logo">
+        <h2>Marcas</h2>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="img/brands/adidas.png"></div>
+            <div class="slide"><img src="img/brands/eysom.png"></div>
+            <div class="slide"><img src="img/brands/gap.png"></div>
+            <div class="slide"><img src="img/brands/nike.png"></div>
+            <div class="slide"><img src="img/brands/puma.png"></div>
+            <div class="slide"><img src="img/brands/Reebok.png"></div>
+            <div class="slide"><img src="img/brands/rhone.png"></div>
+            <div class="slide"><img src="img/brands/tenThousand.png"></div>
+            <div class="slide"><img src="img/brands/under_armour.png"></div>
+        </section>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+              slidesToShow: 7,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 500,
+              arrows: false,
+              dots: false,
+              pauseOnHover: false,
+              responsive: [{
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 4
+                }
+              }, {
+                breakpoint: 520,
+                settings: {
+                  slidesToShow: 3
+                }
+              }]
+            });
+          });
+    </script>
+    
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <style>
+        #container{
+            margin: 0;
+            padding: 0;    
+            position: relative;
+            
+        }
+    
+        #top-container{
+            width: 90%;
+            
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            justify-content: left;
+            margin: 50px auto;
+            max-width: 100%;
+            border-radius: 5px;
+            border: 2px solid #f84e56;
+        }
+    
+        #top-container div{
+           margin: 10px 50px;
+        }
+    
+        #top-container h2{
+           margin-bottom: 20px;
+           font-size: 1rem;
+           color: #f84e56;
+        }
+    
+        #top-container ul{
+          padding: 0;
+        }
+    
+        #top-container li{
+            list-style: none;
+            margin-bottom: 10px;
+            font-size: .8rem;
+        }
+    
+        #top-container li a{
+            text-decoration: none;
+            color: #2e342f ;
+        }
+    
+        #top-container li a i{
+            color: #e84049;
+            margin-right:20px;
+            font-size: 2.5rem;
+        }
+    
+        #bottom-container{
+            margin: auto;
+            margin-bottom: 30px;
+            width: 90%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            border: 2px solid #f84e56;
+            padding: 10px;
+        }
+    
+        #bottom-container .payment{
+            margin-top: 30px;
+            color: #e84049;
+        }
+    
+        #bottom-container .payment-src{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        #bottom-container .payment-src li{
+            list-style: none;
+            margin: 0 50px;
+        }
+    
+        #bottom-container img{
+            width: 100px;
+            filter: grayscale(100%);
+        }
+    
+        #bottom-container img:hover{
+            filter: grayscale(0%);
+        }
+    </style>
+    <section id="container">
+        <section id="top-container">
+            <div>
+                <h2>Acerca de SportKraft</h2>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Directorio</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Servicio al cliente</h2>
+                <ul>
+                    <li><a href="#">Contactenos</a></li>
+                    <li><a href="#">Terminos y condiciones<a/></li>
+                    <li><a href="#">Preguntas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Siguenos:</h2>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="bottom-container">
+            <h2 class="payment">Modos de pago</h2>
+            <ul class="payment-src">
+                <li><img src="img/payment/MasterCard.png" alt=""></li>
+                <li><img src="img/payment/visa.png" alt=""></li>
+                <li><img src="img/payment/american.png" alt=""></li>
+                <li><img src="img/payment/diners.png" alt=""></li>
+            </ul>
+        </section>
+    </section>
